@@ -4,42 +4,33 @@ body
     /* color: black; */
     /* background-color: black; */
     color: antiquewhite;
-    /* position: relative; */
-}
-.row
-{
+    background-color: #1d2124;
     /* position: absolute; */
 }
-#buttons-col
+#table-left
 {
-    width: 50%;
     position: relative;
     float: left;
-    border: 1px solid black;
 }
 
-#gifs-col
+#table-right
 {
-    width: 550px;
-    position: relative;
-    float: right; 
-}
-img
-{
-width: 100px;
-height: 150px;
-}
-
-#buttons-col
-{
-    width: 250px;
+    /* position: relative;
+    float: right;  */
 }
 
 button
 {
     width: 150px;
 }
-table
+
+img
 {
-    border: none;
+width: 150px;
+height: 200px;
+}
+
+.table td
+{
+    border : none;
 }

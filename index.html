@@ -9,22 +9,29 @@
 
     <!-- Bringing in Jquery and Bootstrap and also linking our js and css file -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
 </head>
-<body class="bg-dark">
+
+<body>
     <header>
         <!-- <h1>Anime GifTastic </h1> -->
     </header>
     <div class="container m-0 p-0">
         <div classs="row">
-            <!-- <div class="col-md-3" id="buttons-col"> -->
-                <!-- <table class ="table table-striped table-bordered table-dark mt-2"> -->
-                <table class ="table bg-dark mt-2 col-md-3" id="buttons-col">
+            <div class="col-md-6">
+                <table class=" table table-striped table-bordered table-dark mt-5 w-25 " id="table-left">
+                    <thead id="buttons-head"> </thead>
+                    <tbody id="buttons-col"> </tbody>
                 </table>
-            <!-- </div> -->
-            <div class="col-md-9 mt-2 " id="gifs-col">
+            </div>
+            <div class="col-md-6">
+                <table class=" table mt-5 w-50 mr-0 pr-0" id="table-right">
+                    <thead id="gifs-head"> </thead>
+                    <tbody id="gifs-col"> </tbody>
+                </table>
             </div>
         </div>
     </div>
