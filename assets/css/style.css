@@ -15,8 +15,8 @@ body
 
 #table-right
 {
-    /* position: relative;
-    float: right;  */
+    position: relative;
+    float: right; 
 }
 
 button
@@ -26,7 +26,7 @@ button
 
 img
 {
-width: 150px;
+width: 170px;
 height: 200px;
 }
 

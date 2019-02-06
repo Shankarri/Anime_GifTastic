@@ -81,8 +81,8 @@ $(document).ready(function () {
           var rating = response.data[i].rating;
           var still_image = response.data[i].images.original_still.url;
           var gif_image = response.data[i].images.preview_webp.url;
-          var gif_width = response.data[i].images.preview_webp.width;
-          var gif_height = response.data[i].images.preview_webp.height;
+          // var gif_width = response.data[i].images.preview_webp.width;
+          // var gif_height = response.data[i].images.preview_webp.height;
           gif_Arr.push ({gif_rating : rating, gif_img : gif_image, still_img : still_image, width: gif_width, height : gif_height });
           
         console.log(rating, still_image, gif_image);
