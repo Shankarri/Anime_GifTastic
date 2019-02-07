@@ -7,36 +7,59 @@
     <title>Gif Tastic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bringing in Jquery and Bootstrap and also linking our js and css file -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.0/css/bootstrap-slider.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/app.js"></script>
+
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="assets/javascript/app.js"></script>
 </head>
 
 <body>
-    <header>
-        <!-- <h1>Anime GifTastic </h1> -->
+    <!-- Main Header with Game Name-->
+    <header style="text-align:center;">
+        <h1 class="text-success">Anime Giftastic Page</h1>
     </header>
-    <!-- <div class="container m-0 p-0">
-        <div classs="row">
-            <div class="col-md-12"> -->
-            <!-- <div class="col-md-4"> -->
-                <table class=" table table-striped table-bordered table-dark mt-5 w-25 " id="table-left">
-                    <thead id="buttons-head"> </thead>
-                    <tbody id="buttons-col"> </tbody>
-                </table>
-            <!-- </div> -->
-            <!-- <div class="col-md-8"> -->
-                <table class=" table mt-5 w-50 mr-0 pr-0" id="table-right">
-                    <thead id="gifs-head"> </thead>
-                    <tbody id="gifs-col"> </tbody>
-                </table>
-            <!-- </div> -->
-            <!-- </div>
+
+    <div class="container m-2">
+        <!-- Characters display row where we define each characters Details-->
+        <div class="row" id="characters-row">
+
+            <!-- First Character - Strongest player-->
+            <div class="col-md-4">
+                <h2> Anime Gifs List</h2>
+                <h5> Gifs Limit(10-20): <span id="limit-display" class="p-4"> </span>
+                    <input type="number" max="20" min="10" id="images-limit" value="12" /></h5>
+                <h5 id="limit-msg" class="text-danger"> Please enter between 10-20 </h5>
+                <div class="row" id="buttons-col">
+
+                </div>
+
+                <div id="form-data" class="mt-5">
+                    <!-- <div class="row" id="form-col">
+                        <div class="col-md-12 mt-5"> -->
+                    <h5>Add an Anime to the list</h5>
+                    <input type="text" id="user_anime" class="w-100">
+                    <input type="submit" value="Submit" id="submit-btn" class="btn btn-info btn-sm mt-3 w-50" />
+                    <h5 id="user-msg" class="text-danger pt-4"> Please enter an anime name </h5>
+                    <!-- </div> -->
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <!-- Second Character - Weak  player-->
+            <div class="col-md-7">
+                <h2>Anime Gifs </h2>
+                <div class="row" id="gifs-col">
+
+                </div>
+            </div>
+
         </div>
-    </div> -->
+
+    </div>
+
 </body>
 
 </html>

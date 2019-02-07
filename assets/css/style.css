@@ -1,22 +1,7 @@
 body
 {
-    /* background-color: white; */
-    /* color: black; */
-    /* background-color: black; */
     color: antiquewhite;
     background-color: #1d2124;
-    /* position: absolute; */
-}
-#table-left
-{
-    position: relative;
-    float: left;
-}
-
-#table-right
-{
-    position: relative;
-    float: right; 
 }
 
 button
@@ -26,11 +11,27 @@ button
 
 img
 {
-width: 170px;
-height: 200px;
+    width: 120px;
+    height: 150px;
+}
+.row
+{
+    text-align: center;
+}
+#form-data
+{
+    text-align: left;
 }
 
-.table td
+.gif-border
 {
-    border : none;
+    border: 1px solid #121314;
+}
+#images-limit
+{
+    width: 60px;
+}
+
+.form-control-range {
+	background-color: grey;
 }
