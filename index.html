@@ -4,54 +4,64 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Gif Tastic</title>
+    <title>Anime Gif Tastic</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.0/css/bootstrap-slider.css">
-        
-
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.0/css/bootstrap-slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-------------------------Bring in Style libraries -------------------------->
+
     <link href="https://fonts.googleapis.com/css?family=Courgette|Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Teko" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!------------------------------------------------------------------------------------------------->
+
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="assets/javascript/app.js"></script>
 </head>
 
 <body>
-    <!-- Main Header with Game Name-->
-    <header style="text-align:center;">
+    <!------------------------- Title -------------------------->
+    <header>
         <h1 class="text-success pb-2"><i class="fas fa-dragon"></i> Anime Gifs Page <i class="fas fa-dragon"></i> </h1>
     </header>
 
+    <!------------------------------------------------------------------------------------------------->
+
     <div class="container">
-        <!-- Characters display row where we define each characters Details-->
+
         <div class="row" id="main-row">
 
-            <!-- First Character - Strongest player-->
+            <!------------------------- Buttons and User Input columns -------------------------->
             <div class="col-md-4">
                 <h2> Anime Gifs List</h2>
-                <h5> Gifs Limit(10-20): <span id="limit-display" class="p-4"> </span>
-                    <input type="number" max="20" min="10" id="images-limit" value="10" /></h5>
+                <h5> Gifs Limit(10-20):
+                    <span id="limit-display" class="p-4"> </span>
+                    <input type="number" max="20" min="10" id="images-limit" value="10" />
+                </h5>
                 <h5 id="limit-msg" class="text-danger"> Please enter between 10-20 </h5>
-                <div class="row" id="buttons-col">
 
-                </div>
+                <!-- Dynamic Buttons Rows--->
+                <div class="row" id="buttons-col"> </div>
 
+                <!-- Form Data--->
                 <div id="form-data" class="mt-5">
-                    <!-- <div class="row" id="form-col">
-                        <div class="col-md-12 mt-5"> -->
                     <h5>Add an Anime to the list</h5>
                     <input type="text" id="user_anime" class="w-100">
                     <input type="submit" value="Submit" id="submit-btn" class="btn btn-info btn-sm mt-3 w-50" />
                     <h5 id="user-msg" class="text-danger pt-4"> Please enter an anime name </h5>
-                    <!-- </div> -->
                 </div>
             </div>
-            <!-- Second Character - Weak  player-->
+            <!------------------------------------------------------------------------------------------------->
+
+            <!------------------------- Dynamic Gifs cols -------------------------->
             <div class="col-md-8 pl-5">
                 <h2 id="anime_title"></h2>
                 <div class="row" id="gifs-col">

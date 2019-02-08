@@ -1,52 +1,62 @@
+/* General Body Styles */
 body
 {
     color: antiquewhite;
-    background-color: #1d2124;   
+    background-color: #1d2124; 
+    text-align: center;  
 }
+
+/* Page Title Heading styles */
 h1
 {
     font-family: 'Permanent Marker', cursive;
     font-size: 4em;
     border-bottom: 1px solid black;
-
 }
+
+/* Column Header styles*/
  h2
 {
     color: darkorange;
     font-family: 'Courgette', cursive;
+    
 }
-.anime-btn
-{
-    width: 150px;
-}
-.close-btn
-{
-    width : 20px;
-}
-img
-{
-    width: 90%;
-    height: 100px;
-}
-.row, #main-row
-{
-    text-align: center;
-}
-#form-data, p
-{
-    text-align: left;
-}
-
-.gif-border
-{
-    border: 1px solid #121314;
-    /* border: 1px solid white; */
-}
+/* Gifs limit setting box width*/
 #images-limit
 {
     width: 60px;
 }
 
-.form-control-range {
-	background-color: grey;
+/* Width for buttons displaying anime*/
+.anime-btn
+{
+    width: 150px;
 }
+
+/* Width for X remove button */
+.remove-btn
+{
+    width : 20px;
+}
+
+/* Dynamic Gif images size*/
+img
+{
+    width: 90%;
+    height: 100px;
+}
+
+/* Gif Details and Form fields to align left*/
+#form-data, p
+{
+    text-align: left;
+}
+
+/* Gif border to differentiate*/
+.gif-border
+{
+    border: 1px solid #121314;
+}
+
+
+
