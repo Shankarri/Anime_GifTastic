@@ -8,11 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.0/css/bootstrap-slider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.0/css/bootstrap-slider.css">
+        
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Teko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <script src="assets/javascript/app.js"></script>
 </head>
@@ -20,18 +24,18 @@
 <body>
     <!-- Main Header with Game Name-->
     <header style="text-align:center;">
-        <h1 class="text-success">Anime Giftastic Page</h1>
+        <h1 class="text-success pb-2"><i class="fas fa-dragon"></i> Anime Gifs Page <i class="fas fa-dragon"></i> </h1>
     </header>
 
-    <div class="container m-2">
+    <div class="container">
         <!-- Characters display row where we define each characters Details-->
-        <div class="row" id="characters-row">
+        <div class="row" id="main-row">
 
             <!-- First Character - Strongest player-->
             <div class="col-md-4">
                 <h2> Anime Gifs List</h2>
                 <h5> Gifs Limit(10-20): <span id="limit-display" class="p-4"> </span>
-                    <input type="number" max="20" min="10" id="images-limit" value="12" /></h5>
+                    <input type="number" max="20" min="10" id="images-limit" value="10" /></h5>
                 <h5 id="limit-msg" class="text-danger"> Please enter between 10-20 </h5>
                 <div class="row" id="buttons-col">
 
@@ -47,10 +51,9 @@
                     <!-- </div> -->
                 </div>
             </div>
-            <div class="col-md-1"></div>
             <!-- Second Character - Weak  player-->
-            <div class="col-md-7">
-                <h2>Anime Gifs </h2>
+            <div class="col-md-8 pl-5">
+                <h2 id="anime_title"></h2>
                 <div class="row" id="gifs-col">
 
                 </div>

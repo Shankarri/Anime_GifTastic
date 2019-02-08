@@ -1,24 +1,38 @@
 body
 {
     color: antiquewhite;
-    background-color: #1d2124;
+    background-color: #1d2124;   
 }
+h1
+{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 4em;
+    border-bottom: 1px solid black;
 
-button
+}
+ h2
+{
+    color: darkorange;
+    font-family: 'Courgette', cursive;
+}
+.anime-btn
 {
     width: 150px;
 }
-
+.close-btn
+{
+    width : 20px;
+}
 img
 {
-    width: 120px;
-    height: 150px;
+    width: 90%;
+    height: 100px;
 }
-.row
+.row, #main-row
 {
     text-align: center;
 }
-#form-data
+#form-data, p
 {
     text-align: left;
 }
@@ -26,6 +40,7 @@ img
 .gif-border
 {
     border: 1px solid #121314;
+    /* border: 1px solid white; */
 }
 #images-limit
 {
